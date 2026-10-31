@@ -18,7 +18,17 @@
   <g clip-path="url(#frame)">
     <rect width="580" height="200" fill="#ffffff"/>
     <rect width="580" height="200" fill="url(#glow)" class="glow"/>
-    <path d="M516 30 L540 44 V72 L516 86 L492 72 V44 Z" fill="none" stroke="#ff8091" stroke-width="2"/>
+    <path d="M516 30 L540 44 V72 L516 86 L492 72 V44 Z" fill="#ff8091" fill-opacity=".1" stroke="#ff8091" stroke-width="1.5"/>
+    <g transform="translate(516 58)"><g transform="translate(-13.0 -13.0) scale(1.0833)" fill="none" stroke="#ff8091" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h.01" />
+  <path d="M7 5h.01" />
+  <path d="M11 7h.01" />
+  <path d="M3 7h.01" />
+  <path d="M7 9h.01" />
+  <path d="M3 11h.01" />
+  <rect width="4" height="4" x="15" y="5" />
+  <path d="m19 9 2 2v10c0 .6-.4 1-1 1h-6c-.6 0-1-.4-1-1V11l2-2" />
+  <path d="m13 14 8-2" />
+  <path d="m13 19 8-2" /></g></g>
     <text x="32" y="66" class="title">Perfume Vault</text>
     <text x="32" y="104" class="body">A perfume storefront with its own admin</text><text x="32" y="128" class="body">and content tools.</text>
     <rect x="32" y="150" width="73" height="28" rx="14" fill="#f2f1ef"/><text x="69" y="169" class="tag" text-anchor="middle">Next.js</text><rect x="113.39999999999999" y="150" width="82" height="28" rx="14" fill="#f2f1ef"/><text x="154" y="169" class="tag" text-anchor="middle">Supabase</text><rect x="203.0" y="150" width="82" height="28" rx="14" fill="#f2f1ef"/><text x="244" y="169" class="tag" text-anchor="middle">Tailwind</text>

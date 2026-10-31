@@ -13,11 +13,23 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "profile" / "assets"
 LOGO = (Path(__file__).resolve().parent / "src" / "bohuvuj-logo.b64").read_text().strip()
 # Bump when the artwork changes: GitHub caches images by URL.
-V = 1
+V = 2
 
 SANS = "Inter,'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif"
 SERIF = "'Instrument Serif','Iowan Old Style','Palatino Linotype',Georgia,serif"
 MONO = "'JetBrains Mono','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
+ICONS = Path(__file__).resolve().parent / "src" / "icons"
+
+
+def lucide(name, color, size=32, width=2.0):
+    """A Lucide icon (ISC licence, tools/src/icons) centred on 0,0."""
+    raw = (ICONS / f"{name}.svg").read_text(encoding="utf-8")
+    inner = raw[raw.index(">", raw.index("<svg")) + 1: raw.rindex("</svg>")].strip()
+    k = size / 24
+    return (f'<g transform="translate({-size / 2:.1f} {-size / 2:.1f}) scale({k:.4f})" fill="none" stroke="{color}" '
+            f'stroke-width="{width}" stroke-linecap="round" stroke-linejoin="round">{inner}</g>')
+
+
 REDUCED = "@media (prefers-reduced-motion: reduce){*{animation:none!important}}"
 
 # The brand: Bohuvuj red, warm charcoal and paper, a little gold.
@@ -96,13 +108,7 @@ SERVICES = [
 
 
 def icon(kind, c):
-    if kind == "web":
-        return f'<rect x="-18" y="-13" width="36" height="26" rx="4" fill="none" stroke="{c}" stroke-width="2"/><path d="M-18 -5 H18" stroke="{c}" stroke-width="2"/><circle cx="-13" cy="-9" r="1.4" fill="{c}"/><circle cx="-8" cy="-9" r="1.4" fill="{c}"/>'
-    if kind == "code":
-        return f'<path d="M-8 -10 L-17 0 L-8 10 M8 -10 L17 0 L8 10 M3 -14 L-3 14" fill="none" stroke="{c}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>'
-    if kind == "phone":
-        return f'<rect x="-10" y="-17" width="20" height="34" rx="4" fill="none" stroke="{c}" stroke-width="2"/><path d="M-3 12 H3" stroke="{c}" stroke-width="2" stroke-linecap="round"/>'
-    return f'<path d="M-12 10 H11 A8 8 0 0 0 9 -6 A11 11 0 0 0 -12 -2 A6 6 0 0 0 -12 10 Z" fill="none" stroke="{c}" stroke-width="2" stroke-linejoin="round"/>'
+    return lucide({"web": "globe", "code": "code-xml", "phone": "smartphone", "cloud": "cloud"}[kind], c, 34)
 
 
 def services(t):
@@ -132,19 +138,19 @@ def services(t):
 
 
 PRODUCTS = [
-    {"id": "collectra", "title": "Collectra CMS", "status": "Live", "accent": "red", "wide": True,
+    {"id": "collectra", "icon": "shield-check", "title": "Collectra CMS", "status": "Live", "accent": "red", "wide": True,
      "lines": ["Collections and hire-purchase accounts for retail branches,", "on the web, Android and iPhone, with offline capture in the field."],
      "tags": ["React", "Supabase", "Capacitor"], "url": "https://singercms.bohuvuj.com/"},
-    {"id": "autletto", "title": "Autletto", "status": "Live", "accent": "gold",
+    {"id": "autletto", "icon": "store", "title": "Autletto", "status": "Live", "accent": "gold",
      "lines": ["Own online store for Facebook and Instagram", "sellers: stock, bKash, courier booking."],
      "tags": ["Next.js", "TypeScript", "Payments"], "url": "https://www.autletto.com/"},
-    {"id": "perfumevault", "title": "Perfume Vault", "status": "Live", "accent": "coral",
+    {"id": "perfumevault", "icon": "spray-can", "title": "Perfume Vault", "status": "Live", "accent": "coral",
      "lines": ["A perfume storefront with its own admin", "and content tools."],
      "tags": ["Next.js", "Supabase", "Tailwind"], "url": "https://perfumevaultbd.com/"},
-    {"id": "subash", "title": "Subash", "status": "Live", "accent": "gold",
+    {"id": "subash", "icon": "flower-2", "title": "Subash", "status": "Live", "accent": "gold",
      "lines": ["A fragrance storefront, from catalogue", "to checkout."],
      "tags": ["TypeScript", "React"], "url": "https://suubas.com/"},
-    {"id": "beeezee", "title": "BeeEzee", "status": "Live", "accent": "red",
+    {"id": "beeezee", "icon": "briefcase-business", "title": "BeeEzee", "status": "Live", "accent": "red",
      "lines": ["ERP and CRM for a growing business:", "sales, stock, people and money."],
      "tags": ["TypeScript", "PostgreSQL", "Docker"], "url": "https://beeezee.bohuvuj.com/"},
 ]
@@ -180,7 +186,8 @@ def card(t, p):
   <g clip-path="url(#frame)">
     <rect width="{w}" height="{h}" fill="{t['card']}"/>
     <rect width="{w}" height="{h}" fill="url(#glow)" class="glow"/>
-    <path d="M{w - 64} 30 L{w - 40} 44 V72 L{w - 64} 86 L{w - 88} 72 V44 Z" fill="none" stroke="{c}" stroke-width="2"/>
+    <path d="M{w - 64} 30 L{w - 40} 44 V72 L{w - 64} 86 L{w - 88} 72 V44 Z" fill="{c}" fill-opacity=".1" stroke="{c}" stroke-width="1.5"/>
+    <g transform="translate({w - 64} 58)">{lucide(p['icon'], c, 26)}</g>
     <text x="32" y="66" class="title">{escape(p['title'])}</text>
     {lines}
     {''.join(pills)}
