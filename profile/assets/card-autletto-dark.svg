@@ -18,7 +18,12 @@
   <g clip-path="url(#frame)">
     <rect width="580" height="200" fill="#19191c"/>
     <rect width="580" height="200" fill="url(#glow)" class="glow"/>
-    <path d="M516 30 L540 44 V72 L516 86 L492 72 V44 Z" fill="none" stroke="#f5c451" stroke-width="2"/>
+    <path d="M516 30 L540 44 V72 L516 86 L492 72 V44 Z" fill="#f5c451" fill-opacity=".1" stroke="#f5c451" stroke-width="1.5"/>
+    <g transform="translate(516 58)"><g transform="translate(-13.0 -13.0) scale(1.0833)" fill="none" stroke="#f5c451" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
+  <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+  <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
+  <path d="M2 7h20" />
+  <path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7" /></g></g>
     <text x="32" y="66" class="title">Autletto</text>
     <text x="32" y="104" class="body">Own online store for Facebook and Instagram</text><text x="32" y="128" class="body">sellers: stock, bKash, courier booking.</text>
     <rect x="32" y="150" width="73" height="28" rx="14" fill="#26262b"/><text x="69" y="169" class="tag" text-anchor="middle">Next.js</text><rect x="113.39999999999999" y="150" width="98" height="28" rx="14" fill="#26262b"/><text x="162" y="169" class="tag" text-anchor="middle">TypeScript</text><rect x="219.39999999999998" y="150" width="82" height="28" rx="14" fill="#26262b"/><text x="260" y="169" class="tag" text-anchor="middle">Payments</text>
