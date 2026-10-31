@@ -263,7 +263,7 @@ Also from the studio: **BohuPay**, a drop-in payment modal for Bangladeshi gatew
 ### Stack
 
 <p>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i={stack}&theme=dark"><img alt="TypeScript, React, Next.js, Vite, Tailwind, Node.js, PostgreSQL, Supabase, Prisma, Redis, Docker, nginx, Cloudflare, Vercel, GitHub Actions, Flutter" src="https://skillicons.dev/icons?i={stack}&theme=light" height="44"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i={stack}&perline=8&theme=dark"><img alt="TypeScript, React, Next.js, Vite, Tailwind, Node.js, PostgreSQL, Supabase, Prisma, Redis, Docker, nginx, Cloudflare, Vercel, GitHub Actions, Flutter" src="https://skillicons.dev/icons?i={stack}&perline=8&theme=light" width="420"></picture>
 </p>
 
 ### Work with us

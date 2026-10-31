@@ -32,7 +32,7 @@ Also from the studio: **BohuPay**, a drop-in payment modal for Bangladeshi gatew
 ### Stack
 
 <p>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts%2Creact%2Cnextjs%2Cvite%2Ctailwind%2Cnodejs%2Cpostgres%2Csupabase%2Cprisma%2Credis%2Cdocker%2Cnginx%2Ccloudflare%2Cvercel%2Cgithubactions%2Cflutter&theme=dark"><img alt="TypeScript, React, Next.js, Vite, Tailwind, Node.js, PostgreSQL, Supabase, Prisma, Redis, Docker, nginx, Cloudflare, Vercel, GitHub Actions, Flutter" src="https://skillicons.dev/icons?i=ts%2Creact%2Cnextjs%2Cvite%2Ctailwind%2Cnodejs%2Cpostgres%2Csupabase%2Cprisma%2Credis%2Cdocker%2Cnginx%2Ccloudflare%2Cvercel%2Cgithubactions%2Cflutter&theme=light" height="44"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts%2Creact%2Cnextjs%2Cvite%2Ctailwind%2Cnodejs%2Cpostgres%2Csupabase%2Cprisma%2Credis%2Cdocker%2Cnginx%2Ccloudflare%2Cvercel%2Cgithubactions%2Cflutter&perline=8&theme=dark"><img alt="TypeScript, React, Next.js, Vite, Tailwind, Node.js, PostgreSQL, Supabase, Prisma, Redis, Docker, nginx, Cloudflare, Vercel, GitHub Actions, Flutter" src="https://skillicons.dev/icons?i=ts%2Creact%2Cnextjs%2Cvite%2Ctailwind%2Cnodejs%2Cpostgres%2Csupabase%2Cprisma%2Credis%2Cdocker%2Cnginx%2Ccloudflare%2Cvercel%2Cgithubactions%2Cflutter&perline=8&theme=light" width="420"></picture>
 </p>
 
 ### Work with us
