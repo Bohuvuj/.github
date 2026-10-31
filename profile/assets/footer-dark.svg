@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="90" viewBox="0 0 1200 90" role="img" aria-label="We cook and eat the codes.">
+  <title>We cook and eat the codes.</title>
+  <style>
+    .t { font: italic 400 26px 'Instrument Serif','Iowan Old Style','Palatino Linotype',Georgia,serif; fill: #b4b6bd; }
+    .run { stroke-dasharray: 80 1200; animation: run 7s linear infinite; }
+    @keyframes run { to{stroke-dashoffset:-1280} }
+    @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+  </style>
+  <path d="M0 70 H1200" stroke="#2a2b30"/>
+  <path d="M0 70 H1200" stroke="#ee4a5e" stroke-width="2" class="run"/>
+  <text x="600" y="40" class="t" text-anchor="middle">We cook and eat the codes.</text>
+</svg>
