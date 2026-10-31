@@ -268,7 +268,7 @@ Also from the studio: **BohuPay**, a drop-in payment modal for Bangladeshi gatew
 
 ### Work with us
 
-Co-founded by **[Redwan Rashid](https://github.com/Redwan002117)**, our Chief Architect. Tell us what you are building: **[bohuvujsoft@gmail.com](mailto:bohuvujsoft@gmail.com)** or **[bohuvuj.com](https://bohuvuj.com/)**.
+Tell us what you are building: **[bohuvujsoft@gmail.com](mailto:bohuvujsoft@gmail.com)** or **[bohuvuj.com](https://bohuvuj.com/)**.
 
 <p>
 {social}
